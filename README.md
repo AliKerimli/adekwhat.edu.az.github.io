@@ -1,1 +1,0 @@
-# adekwhat.edu.az.github.io

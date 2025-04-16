@@ -1,0 +1,131 @@
+# adekwhat.edu.az.github.io
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>ADEKWHAT</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+
+      background-image: url('ADEKWHAT SITE.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
+      padding-bottom: 270px;
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 1px;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    input, button {
+      margin-bottom: 10px;
+      font-size: 14px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 250px;
+      height: 30px;
+      padding: 5px;
+    }
+
+    textarea {
+      width: 350px;
+      height: 60px;
+      padding: 5px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #a67c52;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8c6239;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="ADEKWHAT LOGO.jpg" alt="ADEKWHAT Logo">
+
+  <form>
+    <fieldset>
+      <br>
+      <label>
+        <input type="text" placeholder="Adını qeyd et" maxlength="15" minlength="3" required
+               oninvalid="this.setCustomValidity(this.value.length === 0 ? 'Zəhmət olmasa adınızı daxil edin' : 'Ad minimum 3, maksimum 15 simvol olmalıdır')"
+               oninput="this.setCustomValidity('')">
+      </label>
+      </br>
+
+      <br>
+      <label>
+        <input type="text" placeholder="Soyadını qeyd et" maxlength="20" minlength="5" required
+               oninvalid="this.setCustomValidity(this.value.length === 0 ? 'Zəhmət olmasa soyadınızı daxil edin' : 'Soyad minimum 5, maksimum 20 simvol olmalıdır')"
+               oninput="this.setCustomValidity('')">
+      </label>
+      </br>
+
+      <br>
+      <label>
+        <input type="email" placeholder="Mail-ni yaz" minlength="10" required
+               oninvalid="this.setCustomValidity(this.validity.valueMissing ? 'Zəhmət olmasa email ünvanınızı daxil edin' : 'Zəhmət olmasa düzgün email daxil edin (məsələn: ad@domain.com)')"
+               oninput="this.setCustomValidity('')">
+      </label>
+      </br>
+
+      <br>
+      <label>
+        <input type="password" placeholder="Şifrə daxil et" minlength="8" required
+               oninvalid="this.setCustomValidity(this.value.length === 0 ? 'Zəhmət olmasa şifrənizi daxil edin' : 'Şifrə ən azı 8 simvoldan ibarət olmalıdır')"
+               oninput="this.setCustomValidity('')">
+      </label>
+      </br>
+
+      <br>
+      <label>
+        <input type="text" style="width: 350px; height: 60px;" placeholder="İrad və təkliflər " maxlength="100" required
+               oninvalid="this.setCustomValidity('Zəhmət olmasa qeyd sahəsini boş buraxmayın. Maksimum 100 simvol ola bilər')"
+               oninput="this.setCustomValidity('')">
+      </label>
+      </br>
+
+      <br>
+      <button type="submit">Qeydiyyatdan keç</button>
+      </br>
+    </fieldset>
+  </form>
+
+</body>
+</html>
